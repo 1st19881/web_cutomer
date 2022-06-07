@@ -15,7 +15,6 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
@@ -78,4 +77,22 @@
 </script>
 
 
-
+<script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
+<script>
+  // Replace the <textarea id="editor1"> with a CKEditor
+  // instance, using default configuration.
+  CKEDITOR.replace('#detail');
+  function CKupdate() {
+      for (instance in CKEDITOR.instances)
+          CKEDITOR.instances[instance].updateElement();
+  }
+</script>
+<script>
+  // Replace the <textarea id="editor1"> with a CKEditor
+  // instance, using default configuration.
+  CKEDITOR.replace('#detail1');
+  function CKupdate() {
+      for (instance in CKEDITOR.instances)
+          CKEDITOR.instances[instance].updateElement();
+  }
+</script>
