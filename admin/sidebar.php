@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../template/Elegant/index.html" class="nav-link">
+                    <a href="../template/aviato/index.html" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Fontend</p>
                     </a>
