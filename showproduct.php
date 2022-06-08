@@ -10,7 +10,7 @@ $result_p = mysqli_query($conn,$select_p);
     <div class="container">
         <div class="row">
             <div class="title text-center">
-                <h1 class="page-name">สินค้าของเรา</h1>
+                <h1 class="page-name mb-3">Product</h1>
             </div>
         </div>
         <div class="row">

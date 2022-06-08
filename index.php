@@ -361,7 +361,7 @@ include('showproduct.php') ;
 <!--
 Start Call To Action
 ==================================== -->
-<center> <a href="" class="bt">สินค้าทั้งหมด</a></center>   <!-- End section -->
+<center> <a href="product.php" class="bt">สินค้าทั้งหมด</a></center>   <!-- End section -->
 
 <section class="section instagram-feed">
 	<div class="container">
