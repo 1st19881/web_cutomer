@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="slider-item th-fullpage hero-area"
-        style="background-image: url(assets/template/images/slider/slider-3.jpg);">
+        style="background-image: url(admin/images/Pneumatic.jpg);object-fit:cover;">
         <div class="container">
             <div class="row">
                 <!-- <div class="col-lg-8 text-left">
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="slider-item th-fullpage hero-area"
-        style="background-image: url(assets/template/images/slider/slider-2.jpg);">
+        style="background-image: url(admin/images/Slide1-01.jpg);object-fit:cover;);">
         <div class="container">
             <div class="row">
                 <!-- <div class="col-lg-8 text-right">
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="slider-item th-fullpage hero-area"
-        style="background-image: url(assets/template/images/slider/slider-2.jpg);">
+    style="background-image: url(admin/images/Slide1-03.jpg);object-fit:cover;);">
         <div class="container">
             <div class="row">
                 <!-- <div class="col-lg-8 text-right">
