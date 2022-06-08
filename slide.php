@@ -7,7 +7,7 @@
                     <div class="col-lg-8 text-center">
                         <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">บริษัท ไฮโดรเมติก ทูล
                             จำกัด</h1>
-                        <hr>
+                        <hr style=" border: solid 0.25rem #f9f9f9;display:block;width:25%;">
                         <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"
                             style="font-size:20px;">
                             มุ่งมั่นเพื่อก้าวสู่ความเป็นหนึ่งในงานบริการด้านไฮดรอลิค นิวเมติก

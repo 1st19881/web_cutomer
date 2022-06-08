@@ -11,6 +11,7 @@ $result_p = mysqli_query($conn,$select_p);
             <div class="title text-center">
                 <h4 style="color:#fd7625;">PRODUCTS</h4>
                 <h1 class="page-name">สินค้าของเรา</h1>
+                <hr style=" border: solid 0.35rem #fd7625;display:block;width:10%;">
             </div>
             <div class="row">
 
@@ -82,3 +83,9 @@ $result_p = mysqli_query($conn,$select_p);
         </div>
     </div>
 </section>
+
+<style>
+.product-item {
+    border: solid 0.25rem #fd7625;
+}
+</style>
