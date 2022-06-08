@@ -75,6 +75,27 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
 <script>
 AOS.init();
+</script>
+
+
+<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 </script>

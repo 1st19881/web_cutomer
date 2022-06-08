@@ -1,15 +1,13 @@
-<body id="body">
-
-
-    <section class="about section" style="margin-top:30px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <img class="img-responsive" src="assets/template/images/about.png">
-                    </div>
+<section class="about section" style="margin-top:35px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
+                    <img class="img-responsive" src="assets/template/images/about.png">
                 </div>
-                <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
                     <h1 class="mt-20">ศูนย์รวมระบบนิวเมติกส์ครบวงจร</h1>
                     <blockquote class="quote-post" style="">
                         <p>ศูนย์รวมงานบริการด้านไฮดรอลิค นิวเมติก และอุปกรณ์ในโรงงานอุตสาหกรรม ครบวงจร
@@ -23,5 +21,7 @@
                     <img src="assets/template/images/qr.png" width="300px" alt="">
                 </div>
             </div>
-
         </div>
+
+    </div>
+</section>
