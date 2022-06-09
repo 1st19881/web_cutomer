@@ -15,6 +15,7 @@
 </div>
 <!-- ./wrapper -->
 
+<!-- jQuery -->
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
@@ -30,19 +31,6 @@
 
 <!-- AdminLTE App -->
 <script src="../assets/dist/js/adminlte.min.js"></script>
-
-
-
-<script>
-  $(document).ready(function () {
-    //$('.sidebar-menu').tree();
-    //$('.select2').select2();
-    //Initialize Select2 Elements
-    $('.select2').select2({
-      theme: 'bootstrap4'
-    })
-  })
-</script>
 
 
 
@@ -76,12 +64,11 @@
   });
 </script>
 
-
 <script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
-<script>
+  <script>
   // Replace the <textarea id="editor1"> with a CKEditor
   // instance, using default configuration.
-  CKEDITOR.replace('#detail');
+  CKEDITOR.replace('detail');
   function CKupdate() {
       for (instance in CKEDITOR.instances)
           CKEDITOR.instances[instance].updateElement();
@@ -90,9 +77,24 @@
 <script>
   // Replace the <textarea id="editor1"> with a CKEditor
   // instance, using default configuration.
-  CKEDITOR.replace('#detail1');
+  CKEDITOR.replace('detail1');
   function CKupdate() {
       for (instance in CKEDITOR.instances)
           CKEDITOR.instances[instance].updateElement();
   }
+</script>
+
+
+<script type="text/javascript">
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $('#blah').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
 </script>

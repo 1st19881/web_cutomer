@@ -5,10 +5,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 text-center">
-                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5"
-                            style="text-decoration-line: underline;text-underline-offset: 20px;">บริษัท ไฮโดรเมติก ทูล
+                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">บริษัท ไฮโดรเมติก ทูล
                             จำกัด</h1>
-                        <!-- <hr style=" border: solid 0.25rem #f9f9f9;display:block;width:25%;"> -->
+                        <!-- <hr style=" border: solid 0.35rem #f9f9f9;display:block;width:25%;"> -->
                         <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"
                             style="font-size:18px; ">
                             มุ่งมั่นเพื่อก้าวสู่ความเป็นหนึ่งในงานบริการด้านไฮดรอลิค นิวเมติก
@@ -16,7 +15,7 @@
                             ผู้เชี่ยวชาญเรื่องระบบไฮดรอลิค นิวเมติก และงานอะไหล่เครื่องจักรโรงงานอุตสาหกรรมทุกประเภท
                             นำเข้าและจำหน่าย</p>
                         <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn"
-                            href="shop.html" style="background-color:fd7625;">สินค้าของเรา</a>
+                            href="product.php" style="background-color:fd7625;">สินค้าของเรา</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +50,7 @@
         </div>
     </div>
     <div class="slider-item th-fullpage hero-area"
-    style="background-image: url(admin/images/Slide1-03.jpg);object-fit:cover;);">
+        style="background-image: url(admin/images/Slide1-03.jpg);object-fit:cover;);">
         <div class="container">
             <div class="row">
                 <!-- <div class="col-lg-8 text-right">

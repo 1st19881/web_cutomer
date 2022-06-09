@@ -4,12 +4,12 @@ include('../config/config.php');
 $id = $_GET["id"];
 
 $sql = "SELECT * FROM product WHERE product_id='$id'";
-$result2 = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
-$row = mysqli_fetch_array($result2);
+$result2 = mysql_query($sql) or die ("Error in query: $sql " . mysql_error());
+$row = mysql_fetch_array($result2);
 
 
 $query_sub = "SELECT * FROM category_sub ";
-$result_sub = mysqli_query($conn,$query_sub);
+$result_sub = mysql_query(query_sub);
 
 ?>
 <script type="text/javascript">
@@ -53,7 +53,7 @@ function readURL(input) {
         <div class="form-group">
             <label for="exampleFormControlSelect1">Select Category_Sub  <span class="text-danger">*</span> </label>
             <select name="cate_sub_id" class="form-control" required>
-                <?php while( $rs_sb =mysqli_fetch_array ($result_sub)){?>
+                <?php while( $rs_sb =mysql_fetch_array ($result_sub)){?>
                 <option value="<?php echo $rs_sb["cate_sub_id"];?>">
                     ID:
                     <?php echo $rs_sb["cate_sub_id"] ; ?> .

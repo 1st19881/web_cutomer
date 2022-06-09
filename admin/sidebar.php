@@ -4,7 +4,7 @@
     <a href="index.php" class="brand-link">
         <img src="../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">เว็บโปรแกรมเมอร์</span>
+        <span class="brand-text font-weight-light">hydromatictools</span>
     </a>
 
     <!-- Sidebar -->
@@ -28,12 +28,31 @@
                 <li class="nav-item">
                     <a href="index.php" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Edit Product</p>
+                        <p>สินค้า</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="category.php" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>หมวดหมู่หลัก</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="category_sub.php" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>หมวดหมู่ย่อย</p>
                     </a>
                 </li>
 
+                <!-- <li class="nav-item">
+                    <a href="gallery.php" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Gallery</p>
+                    </a>
+                </li> -->
+
                 <li class="nav-item">
-                    <a href="../template/aviato/index.html" class="nav-link">
+                    <a href="../template/Elegant/index.html" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Fontend</p>
                     </a>

@@ -31,16 +31,18 @@ function readURL(input) {
         echo '';  
     }elseif($act=="gallery"){
         echo '';  
+    }elseif($act=="editgallery"){
+        echo ''; 
     }else{?>
         <button type="button" class="btn btn-primary btn-flat my-3" data-toggle="modal" data-target="#exampleModal"
-            data-whatever="@mdo">Add Product</button>
+            data-whatever="@mdo">เพิ่มสินค้า</button>
         <?php } 
     ?>
 
         <?php 
          include('../config/config.php');
         $query_sub = "SELECT * FROM category_sub ";
-        $result_sub = mysqli_query($conn,$query_sub);
+        $result_sub = mysql_query($query_sub);
         $i=1;
         ?>
 
@@ -48,29 +50,29 @@ function readURL(input) {
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">เพิ่มสินค้า</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body p-4">
                         <form action="product_db.php?act=add" method="POST" enctype="multipart/form-data">
-                        <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">product_name: <span
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">ชื่อสินค้า: <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="product_name" id=""
                                     placeholder="--CompleteName product" required>
                             </div>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">product_model: <span
+                                <label for="recipient-name" class="col-form-label">รุ่น: <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="product_model" id=""
                                     placeholder="--CompleteName productmodel" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Select  Category_Sub </label>
+                                <label for="exampleFormControlSelect1">Select Category_Sub </label>
                                 <select name="cate_sub_id" class="form-control" required>
-                                    <?php while( $rs_sb =mysqli_fetch_array ($result_sub)){?>
+                                    <?php while( $rs_sb =mysql_fetch_array($result_sub)){?>
                                     <option value="<?php echo $rs_sb["cate_sub_id"];?>">
                                         ID:
                                         <?php echo $rs_sb["cate_sub_id"] ; ?> .
@@ -83,12 +85,14 @@ function readURL(input) {
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Product_Detail: <span
                                         class="text-danger">*</span></label>
-                                <textarea name="product_detail" id="detail1" cols="30" rows="5" class="form-control"></textarea>
+                                <textarea name="product_detail" id="detail1" cols="30" rows="5"
+                                    class="form-control"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Product_Detailsub: <span
                                         class="text-danger">*</span></label>
-                                <textarea name="product_detail_sub" id="detail" cols="30" rows="5" class="form-control"></textarea>
+                                <textarea name="product_detail_sub" id="detail" cols="30" rows="5"
+                                    class="form-control"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Image: <span
@@ -97,7 +101,8 @@ function readURL(input) {
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" name="product_pic"
                                             aria-describedby="inputGroupFileAddon01"
-                                            accept="image/x-png,image/gif,image/jpeg" required onchange="readURL(this);">
+                                            accept="image/x-png,image/gif,image/jpeg" required
+                                            onchange="readURL(this);">
                                         <label class=" custom-file-label" for="inputGroupFile01">Choose Img</label>
                                     </div>
                                 </div>
@@ -120,6 +125,9 @@ function readURL(input) {
             }
             else if($act=='gallery'){
                 include('add_gall.php');
+                }
+            else if($act=='editgallery'){
+                include('gallery_edit.php');
                 }
             else{
             include('product_list.php');

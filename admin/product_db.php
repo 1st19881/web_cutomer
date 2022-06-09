@@ -2,11 +2,11 @@
 
 date_default_timezone_set('Asia/Bangkok');
 
-    // echo '<pre>';
-	// print_r($_POST);
-    // print_r($_FILES);
-	// echo '</pre>';
-	// exit;
+    echo '<pre>';
+	print_r($_POST);
+    print_r($_FILES);
+	echo '</pre>';
+	exit;
 
 //เพิ่มข้อมูล
 	$act = (isset($_GET['act']) ? $_GET['act'] : '');
@@ -33,9 +33,9 @@ date_default_timezone_set('Asia/Bangkok');
 	}
 
 		$sqladd="INSERT INTO product(product_name,product_model,product_detail_sub,product_detail,product_pic,cate_sub_id)VALUES('$product_name','$product_model','$product_detail_sub','$product_detail','$path$newname','$cate_sub_id')";
-		$result = mysqli_query($conn, $sqladd)or die ("Error in query: $sqladd
-		query " . mysqli_error());
-		mysqli_close($conn);
+		$result = mysql_query($sqladd)or die ("Error in query: $sqladd
+		query " . mysql_error());
+		mysql_close($conn);
 
 
 		echo '
@@ -116,8 +116,8 @@ $act = (isset($_GET['act']) ? $_GET['act'] : '');
 			product_detail='$product_detail',
 			cate_sub_id='$cate_sub_id'
 			WHERE product_id='$product_id' ";
-		$resultupdate = mysqli_query($conn, $sqlupdate) or die ("Error in query: $sqlupdate " . mysqli_error());
-		mysqli_close($conn); 
+		$resultupdate = mysql_query($sqlupdate) or die ("Error in query: $sqlupdate " . mysql_error());
+		mysql_close($conn); 
 
 				echo '
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -165,8 +165,8 @@ $act = (isset($_GET['act']) ? $_GET['act'] : '');
 
 	$id = $_GET['id'];
 	// $sql5="SELECT*FROM product WHERE id='$id' "; 
-	// $resault5 = mysqli_query($conn, $sql5);
-	// $row = mysqli_fetch_array($resault5 );
+	// $resault5 = mysql_query($sql5);
+	// $row = mysql_fetch_array($resault5 );
 
 	// $path="image-main/"; 
 	// $path_img="image/";
@@ -197,7 +197,7 @@ $act = (isset($_GET['act']) ? $_GET['act'] : '');
 	// 	}
 
 		$sql_del= "DELETE FROM product WHERE product_id='$id' ";
-		$result_del = mysqli_query($conn, $sql_del) or die ("Error in query: $sql_del " . mysqli_error());
+		$result_del = mysql_query($sql_del) or die ("Error in query: $sql_del " . mysql_error());
 
 
   

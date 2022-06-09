@@ -1,4 +1,4 @@
-<section class="about section" style="margin-top:35px;">
+<section class="about section" style="margin-top:20px;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -9,7 +9,7 @@
             <div class="col-md-6">
                 <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000"> 
                 <h1 class="mt-20" style="">ศูนย์รวมระบบนิวเมติกส์ครบวงจร</h1>
-                    <blockquote class="quote-post" style="">
+                    <blockquote class="quote-post" style="margin-top:1rem;">
                         <p>ศูนย์รวมงานบริการด้านไฮดรอลิค นิวเมติก และอุปกรณ์ในโรงงานอุตสาหกรรม ครบวงจร
                             จำหน่ายเกจวัดแรงดัน
                             เทอร์โมมิเตอร์, ดิจิตอลเกจ, เทอร์โมเกจสนับเบอร์, ไชฟอน, กลีเซอร์ลีน ครบทุกรุ่น

@@ -7,27 +7,19 @@ include('head.php') ;
 
 <body id="body">
 
-
-
-
-<?php 
+    <?php 
 include('menu.php') ;
 include('slide.php') ;
+include('headcontent.php') ;
 include('about.php') ;
-include('show_exam.php') ;
-// include('slide_category.php') ;
 include('showproduct.php') ;
 ?>
 
 
 
-
-    
-
-<?php 
+    <?php 
 include('footer.php') ;
 ?>
-
 
 
 </body>
