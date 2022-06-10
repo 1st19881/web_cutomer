@@ -37,6 +37,7 @@ WHERE p.product_id = '$product_id'";
 $rs_gallery = mysqli_query($conn,$query_gallery);
 
 
+
 ?>
 
     <section class="single-product">
@@ -58,15 +59,16 @@ $rs_gallery = mysqli_query($conn,$query_gallery);
                 </div>
                 <div class="col-md-7">
                     <div class="single-product-details">
-                        <h2><?php echo $row_dt['product_name'];?></h2>
+                        <h2>สินค้า: <b><?php echo $row_dt['product_name'];?></b></h2>
                         <h3>รุ่น: <?php echo $row_dt['product_model'];?></h3>
-                        <h3>หมวดหมู่: <?php echo $row_dt['cate_name'];?></h3>
+                        <h3>หมวดหมู่: <span style="color: #fd7625;"><?php echo $row_dt['cate_name'];?></span></h3>
                         <br>
                         <p>
                             <span>รายละเอียด</span> :
                         </p>
                         <?php echo $row_dt['product_detail'];?>
                         <br>
+
                         <p> รายละเอียดย่อย :
                         </p>
                         <?php echo $row_dt['product_detail_sub'];?>
@@ -86,6 +88,10 @@ $rs_gallery = mysqli_query($conn,$query_gallery);
                                 <h3 class="text-center">รูปภาพเพิ่มเติม</h3>
                                 <br>
                                 <?php while($row_gall = mysqli_fetch_array($rs_gallery)){ ?>
+                                <?php $ck_gall = $row_gall['gallery_pic'];  
+                                   if(empty($ck_gall)){
+                                   echo "<h3 class='text-center'>ไม่มี Gallery</h3>";      
+                                   } else{?>
                                 <img class="" src="admin/<?php echo $row_gall['gallery_pic'];?>" width="100%" alt=""
                                     style="border:solid 2px #fd7625;padding:2px;">
                                 <div class="text-center">
@@ -97,6 +103,8 @@ $rs_gallery = mysqli_query($conn,$query_gallery);
                                     </p>
                                     <br>
                                     <br>
+                                    <?php  }  ?>
+
                                     <?php } ?>
                                 </div>
                             </div>
@@ -110,7 +118,9 @@ $rs_gallery = mysqli_query($conn,$query_gallery);
 
 
 
-   
+
+
+
 
     <?php 
 include('footer.php') ;
